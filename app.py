@@ -93,25 +93,6 @@ def main():
     # Display download button if frames have been extracted
     if frames_extracted:
         st.success("Frames extracted successfully!")
-        if st.button("Download Frames"):
-            # Create a directory to store frames
-            frames_dir = "extracted_frames"
-            os.makedirs(frames_dir, exist_ok=True)
-            # Move extracted frames to the directory
-            for file in os.listdir(temp_dir):
-                shutil.move(os.path.join(temp_dir, file), frames_dir)
-            # Create a compressed file from the directory
-            shutil.make_archive(frames_dir, 'zip', frames_dir)
-            # Read the compressed file
-            with open(f"{frames_dir}.zip", "rb") as f:
-                zip_bytes = f.read()
-            # Download the compressed file
-            b64 = base64.b64encode(zip_bytes).decode()
-            href = f'<a href="data:file/zip;base64,{b64}" download="extracted_frames.zip">Download extracted frames</a>'
-            st.markdown(href, unsafe_allow_html=True)
-            # Remove the directory and compressed file
-            shutil.rmtree(frames_dir)
-            os.remove(f"{frames_dir}.zip")
     st.markdown('<p id="footer" style="text-align: center; color:#8B4000;"><b>Developed at Murthy Labs</b></p>', unsafe_allow_html=True)
 if __name__ == "__main__":
     main()
