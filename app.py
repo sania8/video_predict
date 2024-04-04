@@ -35,6 +35,7 @@ def main():
         page_icon="chart_with_upwards_trend"
     )
     st.markdown('<div class="custom-container"><p style="font-size:30px; color:purple;"><b>Welcome to the app!</b></p></div>', unsafe_allow_html=True)
+    st.image('second.png',width=400)
     
     col1 = st.sidebar
     with col1:
