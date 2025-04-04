@@ -2,7 +2,7 @@
 
 Welcome to the **Video Frame Extractor & Object Position Predictor** – a powerful and intuitive web application built to extract frames from videos and predict object positions within them using advanced machine learning techniques.
 
-Developed with ❤️ at **Murthy Labs**, this tool helps researchers and developers quickly analyze motion, behavior, and object tracking across video frames.
+Developed with ❤️ at **Murthy Labs (https://www.murtylab.com/)**, this tool helps researchers and developers quickly analyze motion, behavior, and object tracking across video frames.
 
 ---
 
@@ -65,15 +65,6 @@ Developed with ❤️ at **Murthy Labs**, this tool helps researchers and develo
 
 ---
 
-## 📸 Sample Output
-
-| Video Input | Extracted Frames | Predicted Object Positions |
-|-------------|------------------|-----------------------------|
-| ![](sample_video.gif) | ![](frames_grid.png) | ![](object_tracking.gif) |
-
-_(Replace with your visuals if available)_
-
----
 
 ## 🤝 Contributing
 
